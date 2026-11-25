@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, JavaScript, DOM, лабораторна робота, Брітіков, ІО-41, Львів">
+    <meta name="description" content="Лабораторна робота №4: доступ до об'єктів DOM за допомогою JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Брітіков О., ІО-41, ЛР4, варіант 66</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Лабораторна робота №4</h1>
+
+    <h2>Брітіков Олександр Денисович</h2>
+
+    <p>Дата і місце народження: 29.05.2007, Донецьк, Україна.</p>
+
+    <p>Освіта: 243 школа; Національний технічний університет України
+    «Київський політехнічний інститут імені Ігоря Сікорського», група ІО-41.</p>
+
+    <h3>Мої хобі</h3>
+    <ul>
+        <li>Футбол</li>
+        <li>Подорожування</li>
+        <li>Читання</li>
+    </ul>
+
+    <!-- 7-й елемент <body>: (66 mod 10) + 1 = 7 → getElementById -->
+    <h3 id="target-1" class="clickable">Улюблені фільми</h3>
+    <!-- 8-й елемент <body> (наступний) → querySelector -->
+    <ol class="clickable target-2">
+        <li>Формула 1</li>
+        <li>Хижак</li>
+        <li>Вовк з Волл Стріт</li>
+    </ol>
+
+    <h3>Улюблене місто: Львів</h3>
+    <p>Львів — місто на заході України, одне з найкрасивіших, де я бував.
+    Історичний центр внесено до списку Всесвітньої спадщини ЮНЕСКО. Мене
+    вразили бруковані вулиці, архітектура різних епох, затишні кав'ярні та
+    атмосфера старого міста.</p>
+
+    <div id="photo-box">
+        <a href="https://city-adm.lviv.ua/" target="_blank" rel="noopener">
+            <img id="photo" src="city.jpg" alt="Площа Ринок у Львові">
+        </a>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="btn-add">Додати</button>
+        <button type="button" id="btn-grow">Збільшити</button>
+        <button type="button" id="btn-shrink">Зменшити</button>
+        <button type="button" id="btn-remove">Видалити</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
